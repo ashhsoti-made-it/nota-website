@@ -1,42 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Products | NØTA</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NØTA | Products</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
+<!-- Navigation -->
+
 <nav>
-  <h2>NØTA</h2>
-  <div>
-    <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="product.html">Products</a>
-    <a href="custom.html">Custom</a>
-  </div>
+
+    <div class="logo">
+        NØTA
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="custom.html">Custom</a>
+    </div>
+
 </nav>
 
-<h1 class="page-title">Products</h1>
+<!-- Header -->
 
-<div class="products">
+<header class="page-header">
 
-  <div class="product-card">
-    <img src="images-nota/crochetcardigan.jpeg">
-    <h3>Crochet cardigan</h3>
-    <p>Soft, handmade, intentional.</p>
-    <button onclick="order()">Order</button>
-  </div>
+    <p class="tagline">
+        HANDMADE • SLOW LUXURY
+    </p>
 
-  <div class="product-card">
-    <img src="images-nota/crochetbikini.jpeg">
-    <h3>Crochet Bikini</h3>
-    <p>Elegant and slow-made.</p>
-    <button onclick="order()">Order</button>
-  </div>
+    <h1>
+        Shop Collection
+    </h1>
 
-</div>
+    <p>
+        Every piece is handmade to order, carefully crafted with premium yarn and attention to detail.
+    </p>
+
+</header>
+
+<!-- Products -->
+
+<section class="products">
+
+    <div class="product-card hidden">
+
+        <img src="images/cardigan.jpg" alt="Mini Cardigan">
+
+        <div class="product-info">
+            <h3>Mini Cardigan</h3>
+
+            <p class="price">
+                KSh 4,500
+            </p>
+
+            <p>
+                Soft, lightweight and perfect for layering.
+            </p>
+
+            <button class="btn" onclick="order('Mini Cardigan')">
+                Order Now
+            </button>
+        </div>
+
+    </div>
+
+    <div class="product-card hidden">
+
+        <img src="images/jersey.jpg" alt="Crochet Jersey">
+
+        <div class="product-info">
+            <h3>Custom Jersey</h3>
+
+            <p class="price">
+                From KSh 4,200
+            </p>
+
+            <p>
+                Designed with your favourite colours, names and numbers.
+            </p>
+
+            <button class="btn" onclick="order('Custom Jersey')">
+                Order Now
+            </button>
+        </div>
+
+    </div>
+
+    <div class="product-card hidden">
+
+        <img src="images/bikini.jpg" alt="Crochet Bikini">
+
+        <div class="product-info">
+            <h3>Bikini Set</h3>
+
+            <p class="price">
+                From KSh 2,000
+            </p>
+
+            <p>
+                Handmade beachwear made specifically for your measurements.
+            </p>
+
+            <button class="btn" onclick="order('Bikini Set')">
+                Order Now
+            </button>
+        </div>
+
+    </div>
+
+    <div class="product-card hidden">
+
+        <img src="images/beanie.jpg" alt="Beanie">
+
+        <div class="product-info">
+            <h3>Classic Beanie</h3>
+
+            <p class="price">
+                KSh 1,200
+            </p>
+
+            <p>
+                Warm, comfortable and available in any colour.
+            </p>
+
+            <button class="btn" onclick="order('Classic Beanie')">
+                Order Now
+            </button>
+        </div>
+
+    </div>
+
+    <div class="product-card hidden">
+
+        <img src="images/top.jpg" alt="Crochet Top">
+
+        <div class="product-info">
+            <h3>Summer Top</h3>
+
+            <p class="price">
+                From KSh 2,500
+            </p>
+
+            <p>
+                A breathable handmade crochet top for everyday wear.
+            </p>
+
+            <button class="btn" onclick="order('Summer Top')">
+                Order Now
+            </button>
+        </div>
+
+    </div>
+
+    <div class="product-card hidden">
+
+        <img src="images/custom.jpg" alt="Custom Piece">
+
+        <div class="product-info">
+            <h3>Custom Design</h3>
+
+            <p class="price">
+                Quote on Request
+            </p>
+
+            <p>
+                Have something unique in mind? Let's bring your vision to life.
+            </p>
+
+            <button class="btn" onclick="contact()">
+                Request Design
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="shop-footer hidden">
+
+    <h2>
+        Looking for something unique?
+    </h2>
+
+    <p>
+        We create one-of-a-kind crochet pieces made just for you.
+    </p>
+
+    <button class="btn" onclick="contact()">
+        Start a Custom Order
+    </button>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 NØTA • Handmade in Kenya
+    </p>
+
+</footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
