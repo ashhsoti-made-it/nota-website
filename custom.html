@@ -1,32 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Custom Orders | NØTA</title>
-  <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NØTA | Custom Orders</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
+<!-- Navigation -->
+
 <nav>
-  <h2>NØTA</h2>
-  <div>
-    <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="product.html">Products</a>
-    <a href="custom.html">Custom</a>
-  </div>
+
+    <div class="logo">
+        NØTA
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="gallery.html">Gallery</a>
+
+        <a href="products.html">Products</a>
+
+        <a href="custom.html" class="active">Custom</a>
+
+    </div>
+
 </nav>
 
-<h1 class="page-title">Custom Orders</h1>
+<!-- Hero -->
 
-<div class="card">
-  <p>
-    Want something made just for you?<br><br>
-    Send your idea, colors, and vibe ✨
-  </p>
-  <button onclick="contact()">Contact Me</button>
-</div>
+<header class="page-header">
+
+    <p class="tagline">
+        HANDMADE • PERSONAL • ONE OF A KIND
+    </p>
+
+    <h1>
+        Custom Orders
+    </h1>
+
+    <p>
+        Every custom piece begins with your idea.
+        Together we'll create something that exists only for you.
+    </p>
+
+</header>
+
+<!-- Process -->
+
+<section class="custom-process">
+
+    <div class="step hidden">
+
+        <div class="number">
+            01
+        </div>
+
+        <h2>
+            Tell Me Your Idea
+        </h2>
+
+        <p>
+            Send inspiration photos, colours, measurements,
+            or simply describe what you imagine.
+        </p>
+
+    </div>
+
+    <div class="step hidden">
+
+        <div class="number">
+            02
+        </div>
+
+        <h2>
+            Design & Quote
+        </h2>
+
+        <p>
+            I'll discuss the design with you,
+            recommend yarn colours,
+            and provide a price estimate.
+        </p>
+
+    </div>
+
+    <div class="step hidden">
+
+        <div class="number">
+            03
+        </div>
+
+        <h2>
+            Handmade With Care
+        </h2>
+
+        <p>
+            Your piece is carefully crocheted,
+            stitched by hand,
+            and updated throughout the process.
+        </p>
+
+    </div>
+
+    <div class="step hidden">
+
+        <div class="number">
+            04
+        </div>
+
+        <h2>
+            Delivery
+        </h2>
+
+        <p>
+            Once complete,
+            your crochet piece is beautifully packaged
+            and delivered to you.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Why Choose Custom -->
+
+<section class="custom-benefits hidden">
+
+    <h2>
+        Why choose a custom piece?
+    </h2>
+
+    <div class="benefit-grid">
+
+        <div class="benefit-card">
+
+            <h3>
+                Perfect Fit
+            </h3>
+
+            <p>
+                Every measurement is made specifically for you.
+            </p>
+
+        </div>
+
+        <div class="benefit-card">
+
+            <h3>
+                Your Colours
+            </h3>
+
+            <p>
+                Choose from a wide variety of yarn colours.
+            </p>
+
+        </div>
+
+        <div class="benefit-card">
+
+            <h3>
+                Handmade
+            </h3>
+
+            <p>
+                Every stitch is crocheted by hand.
+            </p>
+
+        </div>
+
+        <div class="benefit-card">
+
+            <h3>
+                One of One
+            </h3>
+
+            <p>
+                No mass production.
+                Your piece is uniquely yours.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="order-now hidden">
+
+    <h2>
+        Ready to create something beautiful?
+    </h2>
+
+    <p>
+
+        Click below to begin your custom order on WhatsApp.
+
+    </p>
+
+    <button class="btn" onclick="contact()">
+
+        Start My Order
+
+    </button>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 NØTA • Handmade in Kenya
+
+</p>
+
+</footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
